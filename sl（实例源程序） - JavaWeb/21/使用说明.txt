@@ -1,0 +1,2 @@
+本项目使用到了jstl-api-1.2.jar、jstl-impl-1.2.jar、mysql-connector-java-5.1.10-bin.jar，需要
+需要自行下载，放置到项目的lib文件夹下。

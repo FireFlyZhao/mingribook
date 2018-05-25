@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<!-- User Bean -->
+	<bean id="user" class="com.mr.user.User">
+		<property name="name">
+			<value>小强</value>
+		</property>
+		<property name="age">
+			<value>26</value>
+		</property>
+		<property name="sex">
+			<value>男</value>
+		</property>
+	</bean>
+	<bean autowire="byName" id="printInfo" class="com.mr.user.PrintInfo" />
+</beans>

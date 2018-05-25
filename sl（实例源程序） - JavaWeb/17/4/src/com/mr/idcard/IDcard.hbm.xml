@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ <!-- 公民身份证字段信息配置信息 -->
+ <hibernate-mapping>
+ 	<class name="com.mr.idcard.IDcard" table="tab_idcard">
+ 		<!-- id值 -->
+ 		<id name="id" column="id" type="int">
+			<generator class="native"/>
+		</id>
+		<!-- 公民身份证号 -->
+		<property name="idcard_code" type="string" length="45" not-null="true">
+			<column name="IDcard_code"/>
+		</property>
+ 	</class>
+ </hibernate-mapping>

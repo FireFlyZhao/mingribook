@@ -1,0 +1,3 @@
+本项目使用到了cglib-nodep-2.1_3、commons-logging-1.0.4.jar、spring.jar、
+spring-aop.jar、spring-web.jar、spring-webmvc.jar，需要
+需要自行下载，放置到项目的lib文件夹下。

@@ -1,0 +1,45 @@
+﻿body {
+	FONT-SIZE: 9pt;
+	margin-left:0px;
+	margin-top:0px;	
+	SCROLLBAR-FACE-COLOR: #7BB307; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+	SCROLLBAR-SHADOW-COLOR: #fcfcfc;
+    COLOR: #666666;
+	SCROLLBAR-3DLIGHT-COLOR: #ececec;
+	SCROLLBAR-ARROW-COLOR: #ffffff;
+	SCROLLBAR-TRACK-COLOR: #ececec;
+	SCROLLBAR-DARKSHADOW-COLOR: #999966;
+	background-color: #eeeeee;
+
+}
+td {
+	font-size: 9pt;	line-height:150%;
+}
+a:hover {
+	font-size: 9pt;	color: #FF0000;
+}
+a {
+	font-size: 9pt;	text-decoration: none;	color: #3C404D;
+}
+.btn_grey {
+	font-family: "宋体";	font-size: 9pt;color: #333333;	
+	background-color: #eeeeee;cursor: hand;padding:1px;height:19px;
+	border-top: 1px solid #FFFFFF;border-right:1px solid #666666;
+	border-bottom: 1px solid #666666;border-left: 1px solid #FFFFFF;
+}
+form{
+	padding:0px;
+	margin:0px;
+}
+input {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #333333;
+	border: 1px solid #999999;
+	height:18px;
+}
+.noborder{
+	border:none;
+}
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">

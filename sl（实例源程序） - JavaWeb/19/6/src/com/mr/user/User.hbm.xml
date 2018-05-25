@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ <!-- User信息字段配置信息 -->
+ <hibernate-mapping>
+ 	<class name="com.mr.user.User" table="tb_user">
+ 		<!-- id值 -->
+ 		<id name="id" column="id" type="int">
+			<generator class="native"/>
+		</id>
+		<!-- 姓名 -->
+		<property name="name" type="string" length="45">
+			<column name="name"/>
+		</property>
+		<!-- 年龄 -->
+		<property name="age" type="int">
+			<column name="age"/>
+		</property>
+		<!-- 性别 -->
+		<property name="sex" type="string" length="45">
+			<column name="sex"/>
+		</property>
+ 	</class>
+ </hibernate-mapping>

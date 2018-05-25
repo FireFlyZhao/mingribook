@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="style.css" rel="stylesheet">
+<script language="javascript">
+	function check(){
+		if(form1.user.value==""){				//判断用户名是否为空
+			alert("请输入用户名！");form1.user.focus();return;
+		}else if(form1.pwd.value==""){			//判断密码是否为空
+			alert("请输入密码！");form1.pwd.focus();return;
+		}else{
+			form1.submit();					//提交表单
+		}
+	}
+</script>
+
+</head>
+
+<body>
+  <center>
+  <form name="form1" method="post" action="">
+    <table width="221" border="1" cellspacing="0" cellpadding="0" bordercolor="#FFFFFF" bordercolordark="#CCCCCC" bordercolorlight="#FFFFFF">
+      <tr>
+        <td height="30" colspan="2" bgcolor="#eeeeee">用户登录</td>
+      </tr>
+      <tr>
+        <td width="59" height="30">用户名：</td>
+        <td width="162"><input name="user" type="text" id="user"></td>
+      </tr>
+      <tr>
+        <td height="30">密&nbsp;&nbsp;码：</td>
+        <td><input name="pwd" type="text" id="pwd"></td>
+      </tr>
+      <tr>
+        <td height="30" colspan="2" align="center"><input name="Button" type="button" class="btn_grey" value="登录" onClick="check()">
+          &nbsp;
+        <input name="Submit2" type="reset" class="btn_grey" value="重置"></td>
+      </tr>
+    </table>
+  </form>
+  
+</center>
+
+</body>
+</html>

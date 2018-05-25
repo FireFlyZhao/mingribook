@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<!-- Spring配置文件 -->
+<beans>
+	<bean id="user1" class="com.mr.UserInfo">
+		<property name="name">
+			<value>小强</value>
+		</property>
+		<property name="sex">
+			<value>男</value>
+		</property>
+		<property name="age">
+			<value>26</value>
+		</property>
+		<property name="date">
+			<value>1985/2/8</value>
+		</property>
+	</bean>
+		<bean id="customEditorConfigurer"
+		class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+		<property name="customEditors">
+			<map>
+				<entry key="java.util.Date">
+					<bean id="MyDateEditor" class="com.mr.MyDateEditor" />
+				</entry>
+			</map>
+		</property>
+	</bean>
+</beans>

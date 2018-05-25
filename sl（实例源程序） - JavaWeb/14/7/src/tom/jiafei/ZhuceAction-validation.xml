@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+	"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+   	<field name="name">
+	   <field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>用户名不能为空</message>
+		</field-validator>
+	</field>
+	<field name="pass">
+	   <field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>密码不能为空</message>
+		</field-validator>
+	</field>
+		<field name="rpass">
+	   <field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>确认密码不能为空</message>
+		</field-validator>
+		<field-validator type="fieldexpression">
+			<param name="expression"><![CDATA[(pass==rpass)]]></param>
+			<message>两次输入密码不一致</message>
+		</field-validator>
+	</field>
+		<field name="phone">
+			   <field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>电话不能为空</message>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[(1\d{10})]]></param>
+			<message>电话必为11位数字，且必以1开头</message>
+		</field-validator>
+	</field>
+</validators>

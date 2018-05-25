@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+h1,h2,h3{			/*定义CSS样式 */
+	color:#6CFw;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;	
+}
+p{					
+	color:#F0Cs;		/*定义颜色*/
+	font-weight:200;	
+	font-size:24px;		/*设置字体大小*/
+}

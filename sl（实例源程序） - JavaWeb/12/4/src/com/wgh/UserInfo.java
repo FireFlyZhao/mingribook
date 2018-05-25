@@ -1,0 +1,14 @@
+package com.wgh;
+
+public class UserInfo {
+	private String name="";	//√˚≥∆ Ù–‘
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+	
+}

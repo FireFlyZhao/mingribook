@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.mr.user.User" table="tb_user3">
+		<!-- id值 -->
+ 		<id name="id" column="id" type="int">
+			<generator class="native"/>
+		</id>
+		<!-- 名称 -->
+		<property name="name" type="string" length="45">
+			<column name="name"/>
+		</property>
+		<!-- 职务 -->
+		<property name="business" type="string" length="45">
+			<column name="business"/>
+		</property>
+		<!-- 信息添加时间 -->
+		<property name="addTime" type="java.util.Date">
+			<column name="addTime"/>
+		</property>
+	</class>
+</hibernate-mapping>

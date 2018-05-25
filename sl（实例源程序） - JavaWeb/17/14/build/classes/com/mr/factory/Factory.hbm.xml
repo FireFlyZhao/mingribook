@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ <!-- 产品信息字段配置信息 -->
+ <hibernate-mapping>
+ 	<class name="com.mr.factory.Factory" table="tab_factory">
+ 		<!-- id值 -->
+ 		<id name="factoryId" column="factoryid" type="int">
+			<generator class="native"/>
+		</id>
+		<!-- 生产商名称 -->
+		<property name="factoryName" type="string" length="45">
+			<column name="factoryname"/>
+		</property>
+		<!-- 定义一对多映射 -->
+		<set name="products"
+			 inverse="true"
+		>
+			<key column="factoryid"/>
+			<one-to-many class="com.mr.product.Product"/>
+		</set>
+ 	</class>
+ </hibernate-mapping>

@@ -1,0 +1,32 @@
+<%@ page language="java" pageEncoding="GBK"%>
+<html>
+	<head>
+		<title>一个简单的文档</title>
+		<script language="javascript">
+		var elementList = ""; 			//全局变量，保存Element标记名，使用完毕要清空
+		function getElement(node) { 	//参数node是一个Node对象
+			var total = 0;
+			if(node.nodeType==1) { 		//检查node是否为Element对象
+				total++;				//如果是，计数器加1
+				elementList = elementList + node.nodeName + "、"; 	//保存标记名
+			}
+			var childrens = node.childNodes;						//获取node的全部子节点
+			for(var m=node.firstChild; m!=null;m=m.nextSibling) {
+				total += getElement(m); 							//对每个子节点进行递归操作
+			}
+			return total;
+		}
+		function show(){
+			var number=getElement(document);							//获取标记总数
+			elementList=elementList.substring(0,elementList.length-1);	//去除字符串中最后一个逗号
+			alert("该文档中包含："+elementList+"等"+number+"个标记！");
+			elementList="";      										//清空全局变量
+		}
+		</script>
+	</head>
+	<body onload="show()">
+		欢迎访问明日科技网站！
+		<br>
+		<a href="http://www.mingribook.com"> http://www.mingribook.com</a>
+  </body>
+</html>

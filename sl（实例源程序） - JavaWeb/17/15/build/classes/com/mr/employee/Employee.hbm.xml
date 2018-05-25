@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ <!-- 员工信息字段配置信息 -->
+ <hibernate-mapping>
+ 	<class name="com.mr.employee.Employee" table="tab_employee">
+ 		<!-- id值 -->
+ 		<id name="id" column="id" type="int">
+			<generator class="native"/>
+		</id>
+		<!-- 姓名 -->
+		<property name="name" type="string" length="45">
+			<column name="name"/>
+		</property>
+		<!-- 性别 -->
+		<property name="sex" type="string" length="1">
+			<column name="sex"/>
+		</property>
+		<!-- 职务 -->
+		<property name="business" type="string" length="45">
+			<column name="business"/>
+		</property>
+		<!-- 地址 -->
+		<property name="address" type="string" length="100">
+			<column name="address"/>
+		</property>
+		<!-- 备注 -->
+		<property name="remark" type="string" length="200">
+			<column name="remark"/>
+		</property>
+ 	</class>
+ </hibernate-mapping>

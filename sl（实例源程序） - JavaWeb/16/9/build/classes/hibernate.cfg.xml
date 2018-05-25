@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<property name="dialect"><!--指定数据库使用的方言-->
+			org.hibernate.dialect.MySQLDialect
+		</property>
+		<property name="connection.url"><!--指定连接数据库的URL地址-->
+			jdbc:mysql://localhost:3306/db_database16
+		</property>
+		<property name="connection.username">root</property><!--指定连接数据库的用户名-->
+		<property name="connection.password">111</property><!--指定连接数据库的密码-->
+		<property name="connection.driver_class"><!--指定连接数据库用的驱动-->
+			com.mysql.jdbc.Driver
+		</property>
+		<mapping resource="com/wgh/model/TbMessage.hbm.xml" /><!--指定持久化类映射文件-->
+
+	</session-factory>
+
+</hibernate-configuration>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>10.3</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<!-- 过滤器声明 -->
+	<filter>
+		<!-- 过滤器的名称 -->
+		<filter-name>CountFilter</filter-name>
+		<!-- 过滤器的完整类名 -->
+		<filter-class>com.lyq.CountFilter</filter-class>
+		<!-- 设置初始化参数 -->
+		<init-param>
+			<!-- 参数名 -->
+			<param-name>count</param-name>
+			<!-- 参数值 -->
+			<param-value>5000</param-value>
+		</init-param>
+	</filter>
+	<!-- 过滤器映射 -->
+	<filter-mapping>
+		<!-- 过滤器名称 -->
+		<filter-name>CountFilter</filter-name>
+		<!-- 过滤器URL映射 -->
+		<url-pattern>/index.jsp</url-pattern>
+	</filter-mapping>
+</web-app>

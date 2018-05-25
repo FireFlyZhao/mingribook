@@ -1,0 +1,25 @@
+  <title>从身份证号码中获取出生日期</title>
+	<script language="javascript">
+	function checkRealName(){
+		var str=form1.realName.value;			//获取输入的真实姓名
+		if(str==""){		//当真实姓名为空时
+			alert("请输入真实姓名！");form1.realName.focus();return;
+		}else{				//当真实姓名不为空时
+			var objExp=/[\u4E00-\u9FA5]{2,}/;	//创建RegExp对象
+			if(objExp.test(str)==true){		//判断是否匹配
+				alert("您输入的真实姓名正确！");
+			}else{
+				alert("您输入的真实姓名不正确！");
+			}
+		}
+	}
+	</script>
+  </head>
+  
+  <body>
+  <center>
+  <form name="form1" method="post" action="">
+  请输入真实姓名：<input name="realName" type="text" id="realName">
+  <input name="Button" type="button" onClick="checkRealName()" value="检测">
+  </form> 
+  </center>  

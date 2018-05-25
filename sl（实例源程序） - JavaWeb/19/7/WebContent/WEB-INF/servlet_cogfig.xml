@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- 前置通知 -->
+	<bean id="beforeAdvisor" class="com.mr.aop.BeforeAdivsor" />
+	<!-- 后置通知 -->
+	<bean id="affterAdvice" class="com.mr.aop.AfterAdvice" />
+	<bean id="PointcutAdvisor"
+		class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+		<property name="advice">
+			<ref bean="beforeAdvisor" />
+		</property>
+		<property name="patterns">
+			<list>
+				<value>.*executeInsert*.</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="executeInsert" class="com.mr.aop.ExecuteInsert" />
+	<bean id="CheckClass" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="proxyInterfaces">
+			<value>com.mr.aop.UserInterface</value>
+		</property>
+		<property name="target">
+			<ref local="executeInsert" />
+		</property>
+		<property name="interceptorNames">
+			<list>
+				<value>PointcutAdvisor</value>
+				<value>affterAdvice</value>
+			</list>
+		</property>
+	</bean>
+	<!-- 配置视图 -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass">
+			<value>org.springframework.web.servlet.view.JstlView</value>
+		</property>
+		<property name="prefix">
+			<value>/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+	<!-- 映射的do -->
+	<bean id="urlMapping"
+		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="/commit.do">commitAction</prop>
+			</props>
+		</property>
+	</bean>
+	<!--  -->
+	<bean id="paraMethodResolver"
+		class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver">
+		<property name="paramName">
+			<value>action</value>
+		</property>
+		<property name="defaultMethodName">
+			<value>execute</value>
+		</property>
+	</bean>
+	<bean id="commitAction" class="com.mr.mvc.CommitAction">
+		<property name="methodNameResolver">
+			<ref bean="paraMethodResolver" />
+		</property>
+		<property name="myCheckClass">
+			<ref bean="CheckClass" />
+		</property>
+	</bean>
+</beans>
+

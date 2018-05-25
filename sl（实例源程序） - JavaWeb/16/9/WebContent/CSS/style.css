@@ -1,0 +1,47 @@
+body {
+	FONT-SIZE: 9pt;
+	margin:0px;
+	SCROLLBAR-FACE-COLOR: #CDA608; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+	SCROLLBAR-SHADOW-COLOR: #fcfcfc; COLOR: #000000;
+	SCROLLBAR-3DLIGHT-COLOR: #ececec;
+	SCROLLBAR-ARROW-COLOR: #ffffff;
+	SCROLLBAR-TRACK-COLOR: #ececec;
+	SCROLLBAR-DARKSHADOW-COLOR: #999966;
+}
+td {
+	font-size: 9pt;	line-height:150%;
+	color:#3C0201;
+}
+a:hover {
+	font-size: 9pt;	color: #FF4400;
+}
+a {
+	font-size: 9pt;	text-decoration: none;	color: #3C404D;
+}
+
+.btn_bg {
+	background-image:url(../images/anniu.gif); border:#436E9B thin 1px;
+	width:84px;
+	height:28px;padding:6px;
+	color:#3C0201;
+	font-weight:bold;
+}
+
+form{
+	padding:0px;
+	margin:0px;
+}
+input {
+	font-size: 9pt;
+	color: #333333;
+	border: 1px solid #999999;
+}
+.wenbenkuang {
+	font-size: 9pt;
+	color: #333333;
+	border: 1px solid #999999;
+}
+.noborder{
+border-style:none;
+}

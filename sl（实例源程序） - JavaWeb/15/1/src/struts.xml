@@ -1,0 +1,15 @@
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+	
+<struts>
+	<!-- 声明常量 -->
+	<constant name="struts.devMode" value="true"></constant>
+	<package name="myPackage" extends="struts-default" namespace="/">
+		<!-- 定义action -->
+		<action name="ognl" class="com.lyq.action.OGNLAction">
+			<!-- 结果映射 -->
+			<result name="success">success.jsp</result>
+		</action>
+	</package>
+</struts>

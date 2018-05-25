@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>10.3</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<!-- 声明过滤器 -->
+<filter>
+	<!-- 过滤器名称 -->
+	<filter-name>CharactorFilter</filter-name>
+	<!-- 过滤器的完整类名 -->
+	<filter-class>com.lyq.CharactorFilter</filter-class>
+	<!-- 初始化参数 -->
+	<init-param>
+		<!-- 参数名 -->
+		<param-name>encoding</param-name>
+		<!-- 参数值 -->
+		<param-value>UTF-8</param-value>
+	</init-param>
+</filter>
+<!-- 过滤器映射 -->
+<filter-mapping>
+	<!-- 过滤器名称 -->
+	<filter-name>CharactorFilter</filter-name>
+	<!-- URL映射 -->
+	<url-pattern>/*</url-pattern>
+</filter-mapping>
+	<!-- 声明Servlet -->
+	<servlet>
+		<!-- Servlet名称 -->
+		<servlet-name>AddServlet</servlet-name>
+		<!-- Servlet完整类名 -->
+		<servlet-class>com.lyq.AddServlet</servlet-class>
+	</servlet>
+	<!-- Servlet映射 -->
+	<servlet-mapping>
+		<!-- Servlet名称 -->
+		<servlet-name>AddServlet</servlet-name>
+		<!-- URL映射 -->
+		<url-pattern>/AddServlet</url-pattern>
+	</servlet-mapping>
+</web-app>

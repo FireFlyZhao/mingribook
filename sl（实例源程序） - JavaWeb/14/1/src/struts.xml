@@ -1,0 +1,13 @@
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 声明包 -->
+	<package name="myPackage" extends="struts-default">
+		<!-- 定义action -->
+		<action name="first">
+			<!-- 定义处理成功后的映射页面 -->
+			<result>/first.jsp</result>
+		</action>
+	</package>
+</struts>

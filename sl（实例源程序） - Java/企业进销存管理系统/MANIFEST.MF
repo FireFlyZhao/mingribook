@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: com.lzw.MainFrame
+SplashScreen-Image: res/splash.jpg
+Class-Path: . lib/mysql_connector_java_5.1.36_bin.jar

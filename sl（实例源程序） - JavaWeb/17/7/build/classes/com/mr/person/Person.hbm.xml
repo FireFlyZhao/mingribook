@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ <!-- 继承树的映射配置 -->
+ <hibernate-mapping package="com.mr.person">
+ 	<class name="Person" table="tab_person">
+ 		<id name="id">
+			<generator class="native"/>
+		</id>
+		<!-- 声明一个鉴别器 -->
+		<discriminator column="type" type="string"/>
+ 		<!-- 映射自有属性 -->
+		<property name="name" not-null="true"/>
+		<property name="age" type="int"/>
+ 		<property name="sex" type="string"/>
+ 		<!-- 声明子类Student -->
+		<subclass name="Student" discriminator-value="学生">
+			<property name="school"/>
+		</subclass>
+ 		<!-- 声明子类Staffer -->
+		<subclass name="Staffer" discriminator-value="职员">
+			<property name="company"/>
+		</subclass>
+ 	</class>
+ </hibernate-mapping>

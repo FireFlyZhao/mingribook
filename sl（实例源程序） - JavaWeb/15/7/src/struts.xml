@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="GBK"/>
+	<constant name="struts.custom.i18n.resources"  value="ApplicationResources"/>
+	<constant name="struts.devMode"  value="true"/>
+	<package name="first" extends="struts-default" namespace="/firsts">
+	<action name="con" class="fe.zx.ItxAction">
+            <result>/index.jsp</result>
+    </action>
+    </package>
+</struts>    

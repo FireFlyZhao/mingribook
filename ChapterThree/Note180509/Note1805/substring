@@ -1,0 +1,3 @@
+String str = "hello world";
+½ØÈ¡ËùÓĞ×Ö·û
+String substr = str.substring(0,str.length());

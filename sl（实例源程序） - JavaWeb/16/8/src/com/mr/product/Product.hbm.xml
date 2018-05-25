@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ <!-- 产品信息字段配置信息 -->
+ <hibernate-mapping>
+ 	<class name="com.mr.product.Product" table="tab_product">
+ 		<!-- 指定的缓存的同步策略 -->
+ 		<cache usage="read-only"/>
+ 		<!-- id值 -->
+ 		<id name="id" column="id" type="int">
+			<generator class="native"/>
+		</id>
+		<!-- 产品名称 -->
+		<property name="name" type="string" length="45">
+			<column name="name"/>
+		</property>
+		<!-- 产品价格 -->
+		<property name="price" type="double">
+			<column name="price"/>
+		</property>
+		<!-- 生产厂商 -->
+		<property name="factory" type="string" length="45">
+			<column name="factory"/>
+		</property>
+		<!-- 备注 -->
+		<property name="remark" type="string" length="100">
+			<column name="remark"/>
+		</property>
+ 	</class>
+ </hibernate-mapping>

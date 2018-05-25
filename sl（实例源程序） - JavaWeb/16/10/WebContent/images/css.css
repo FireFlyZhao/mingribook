@@ -1,0 +1,32 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+TD {
+	FONT-SIZE: 12px; LINE-HEIGHT: 23px; FONT-FAMILY: "ËÎÌו"
+}
+.tb1{
+	LEFT: 10px; POSITION: relative; TOP: 130px
+}
+.box1{
+	POSITION: relative;
+	width: 115pt;
+	height: 12pt;
+}
+*:link {
+	TEXT-DECORATION: none;
+	color: #000000;
+}
+*:visited {
+	TEXT-DECORATION: none;
+	color: #000000;
+}
+*:active {
+	TEXT-DECORATION: none;
+	color: #000000;
+}
+*:hover {
+	COLOR: red;
+}

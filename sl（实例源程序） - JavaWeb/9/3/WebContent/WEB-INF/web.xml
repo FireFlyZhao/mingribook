@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+  <display-name>web</display-name>
+ <!-- 声明过滤器 -->
+	<filter>
+		<!-- 过滤器名称 -->
+		<filter-name>CharactorFilter</filter-name>
+		<!-- 过滤器的完整类名 -->
+		<filter-class>com.listener.CharactorFilter</filter-class>
+		<!-- 初始化参数 -->
+		<init-param>
+			<!-- 参数名 -->
+			<param-name>encoding</param-name>
+			<!-- 参数值 -->
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<!-- 过滤器映射 -->
+	<filter-mapping>
+		<!-- 过滤器名称 -->
+		<filter-name>CharactorFilter</filter-name>
+		<!-- URL映射 -->
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+  <servlet>
+    <description>Added by JBuilder to compile JSPs with debug info</description>
+    <servlet-name>debugjsp</servlet-name>
+    <servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
+    <init-param>
+      <param-name>classdebuginfo</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <load-on-startup>3</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>debugjsp</servlet-name>
+    <url-pattern>*.jsp</url-pattern>
+  </servlet-mapping>
+<listener>
+	 <listener-class>com.listener.MyContentListener</listener-class>
+</listener>
+</web-app>
+

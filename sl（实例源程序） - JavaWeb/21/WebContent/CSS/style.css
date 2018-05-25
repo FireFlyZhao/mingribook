@@ -1,0 +1,21 @@
+body{
+	margin:0px; 			/*设置外边距*/
+	padding:0px; 		/*设置内边距*/
+	font-size: 9pt; 		/*设置字体大小*/
+}
+#box{
+	margin:0 auto auto auto;		/*设置外边距*/
+	width:800px;					/*设置页面宽度*/
+	clear:both;					/*设置两侧均不可以有浮动内容*/
+	background-color: #FFFFFF;	/*设置背景颜色*/
+}
+
+a:hover {
+	font-size: 9pt;
+	color: #FF4400;
+}
+a {
+	font-size: 9pt;
+	text-decoration: none;	/*不显示下划线*/
+	color: #3C404D;
+}

@@ -1,0 +1,5 @@
+本项目使用到commons-logging-1.0.4.jar、dom4j-1.6.1.jar、
+spring.jar、spring-aop.jar、spring-web.jar、spring-beans.jar、spring-context.jar、
+spring-context-support.jar、spring-core.jar、spring-jdbc.jar、spring-jms.jar、
+spring-orm.jar、spring-test.jar、spring-tx.jar、spring-web.jar、spring-webmvc.jar、
+spring-webmvc-portlet.jar、spring-webmvc-struts.jar，读者需要自行下载，放置到项目的lib文件夹下。

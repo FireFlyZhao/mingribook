@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.lyq.vo.Student" table="tb_student">
+		<id name="id">
+			<generator class="native"/>
+		</id>
+		<property name="stuName" not-null="true" length="50"/>
+		<property name="age"/>
+		<property name="sex" type="boolean">
+			<column name="sex" sql-type="int"/>
+		</property>
+		<property name="stuClass"/>
+		<property name="description"/>
+	</class>
+</hibernate-mapping>

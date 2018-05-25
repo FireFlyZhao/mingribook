@@ -1,0 +1,15 @@
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 声明包 -->
+    <package name="myPackage" extends="struts-default">
+    	<!-- 定义action -->
+    	<action name="greeting" class="com.lyq.action.GreetingAction">
+    		<!-- 定义成功的映射页面 -->
+    		<result name="success">success.jsp</result>
+    		<!-- 定义失败的映射页面 -->
+    		<result name="error">error.jsp</result>
+    	</action>
+    </package>
+</struts>

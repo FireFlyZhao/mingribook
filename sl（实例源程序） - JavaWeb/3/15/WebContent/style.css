@@ -1,0 +1,41 @@
+<!--
+td           { font-size: 9pt;font_name:ËÎÌו;; line-height: 16pt}
+a:hover      { color: #ff0000; text-decoration: underline; font-size: 9pt }
+a            { font-size: 9pt; color: #0000ff; text-decoration: none }
+p {  font-size: 9pt; font-family: "ËÎÌו"; line-height: 11pt}
+.dt { font-size:9pt}
+INPUT.Style_button {
+	BORDER-RIGHT: #003399 1px solid; BORDER-TOP: #003399 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #99ccff; BORDER-LEFT: #003399 1px solid; COLOR: #ffffff; LINE-HEIGHT: normal; BORDER-BOTTOM: #003399 1px solid; FONT-STYLE: normal; HEIGHT: 17px;width: 40px; FONT-VARIANT: normal
+}
+INPUT.Sytle_text {
+	BORDER-RIGHT: #99ccff 1px solid; BORDER-TOP: #99ccff 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BORDER-LEFT: #99ccff 1px solid; LINE-HEIGHT: normal; BORDER-BOTTOM: #99ccff 1px solid; FONT-STYLE: normal; width:82px; HEIGHT: 16px; FONT-VARIANT: normal
+}
+INPUT.Sytle_auto {
+	BORDER-RIGHT: #99ccff 1px solid; BORDER-TOP: #99ccff 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BORDER-LEFT: #99ccff 1px solid; LINE-HEIGHT: normal; BORDER-BOTTOM: #99ccff 1px solid; FONT-STYLE: normal; HEIGHT: 16px; FONT-VARIANT: normal
+}
+INPUT.Style_subject {
+	BORDER-RIGHT: #99ccff 1px solid; BORDER-TOP: #99ccff 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BORDER-LEFT: #99ccff 1px solid; LINE-HEIGHT: normal; BORDER-BOTTOM: #99ccff 1px solid; FONT-STYLE: normal; HEIGHT: 18px; Width: 390px; FONT-VARIANT: normal
+}
+INPUT.Style_button_del {
+	BORDER-RIGHT: #003399 1px solid; BORDER-TOP: #003399 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #99ccff; BORDER-LEFT: #003399 1px solid; COLOR: #ffffff; LINE-HEIGHT: normal; BORDER-BOTTOM: #003399 1px solid; FONT-STYLE: normal; HEIGHT: 20px;width: 90px; FONT-VARIANT: normal
+}
+INPUT.Style_btn_auto {
+	BORDER-RIGHT: #003399 1px solid; BORDER-TOP: #003399 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #99ccff; BORDER-LEFT: #003399 1px solid; COLOR: #ffffff; LINE-HEIGHT: normal; BORDER-BOTTOM: #003399 1px solid; FONT-STYLE: normal; HEIGHT: 20px; FONT-VARIANT: normal
+}
+INPUT.Style_nj {
+	BORDER-RIGHT: #99ccff 1px solid; BORDER-TOP: #99ccff 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BORDER-LEFT: #99ccff 1px solid; LINE-HEIGHT: normal; BORDER-BOTTOM: #99ccff 1px solid; FONT-STYLE: normal; HEIGHT: 18px; Width: 362px; FONT-VARIANT: normal
+}
+INPUT.Style_upload {
+	BORDER-RIGHT: #99ccff 1px solid; BORDER-TOP: #99ccff 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BORDER-LEFT: #99ccff 1px solid; LINE-HEIGHT: normal; BORDER-BOTTOM: #99ccff 1px solid; FONT-STYLE: normal; HEIGHT: 18px; Width: 290px; FONT-VARIANT: normal
+}
+INPUT.button_auto {
+	BORDER-RIGHT: #003399 1px solid; BORDER-TOP: #003399 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #99ccff; BORDER-LEFT: #003399 1px solid; COLOR: #ffffff; LINE-HEIGHT: normal; BORDER-BOTTOM: #003399 1px solid; FONT-STYLE: normal; HEIGHT: 18px; FONT-VARIANT: normal
+}
+input {
+	font-family: "ËÎÌו";
+	font-size: 9pt;
+	color: #333333;
+	border: 1px solid #336699;
+}
+
+-->

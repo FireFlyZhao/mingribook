@@ -1,0 +1,1 @@
+将img.jpg图片复制到ImageZoom.java文件相同的位置，即com.lzw包中。

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="GBK"?>	<!--说明是XML文档，并指定XML文档的版本和编码-->
+<placard version="2.0"> 				<!--定义XML文档的根元素，并设置version属性-->
+  <description>公告栏</description>  	<!--定义XML文档元素-->
+  <createTime>创建于2009年04月15日 16时09分</createTime>  
+  <info id="1"> 						<!--定义XML文档元素-->
+    <title >重要通知</title>  
+    <content><![CDATA[今天下午4：50将进行乒乓球比赛，请各位选手做好准备。]]></content>  
+    <pubDate>2009-04-15 16:09:37</pubDate> 
+  </info>  								<!--定义XML文档元素的结束标记-->
+  <info id="2"> 
+    <title>在servlet中弹出JavaScript</title>  
+    <content><![CDATA[PrintWriter out = response.getWriter();
+		out.println("<script>alert('修改成功！');</script>");]]></content>  
+    <pubDate>2009-04-15 16:12:06</pubDate> 
+  </info>  
+  <info id="3"> 
+    <title>心中的鹅卵石</title>  
+    <content><![CDATA[心中的鹅卵石]]></content>  
+    <pubDate>2009-04-15 16:15:33</pubDate> 
+  </info>  
+  <info id="4">
+    <title>公告标题</title>
+    <content><![CDATA[公告内容]]></content>
+    <pubDate>2009-04-15 16:20:48</pubDate>
+  </info>
+  <info id="5">
+    <title>重要通知</title>
+    <content>&amp;nbsp;&amp;nbsp;明天下午3点将举行乒乓球比赛的颁奖仪式！</content>
+    <pubDate>2009-05-21 16:20:48</pubDate>
+  </info>  
+</placard>								<!--定义XML文档的根元素的结束标记-->
